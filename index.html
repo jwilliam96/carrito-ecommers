@@ -1,79 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Blog</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&family=Tilt+Neon&display=swap"
-        rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="acceso/css/style.css">
-    <link rel="stylesheet" href="/acceso/css/styleBody.css">
+    <link rel="stylesheet" href="acceso/css/style.css" />
+    <link rel="stylesheet" href="/acceso/css/styleBody.css" />
 
     <script src="/acceso/js/main.js" type="module" defer></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Loader -->
     <div class="loader">
-        <div class="loader__container">
-            <span></span>
-        </div>
+      <div class="loader__container">
+        <span></span>
+      </div>
     </div>
 
     <!-- Header -->
     <header class="header">
-        <nav class="nav container">
-            <a href="/" class="nav__logo">
-                <!-- imagen logo -->
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyT3NslaRdUxa8E5nLYJ6utBfSkAB4hL7S3ZqIay79Q7yrrd_radkruiNXcugobbiFI8&usqp=CAU"
-                    alt="esto es una imagen" class="logo--icon">
-            </a>
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <!-- imagen logo -->
+        </a>
 
-            <div class="nav__menu">
+        <div class="nav__menu">
+          <button type="button" class="nav__btn btn--close">
+            <i class="bx bx-x"></i>
+          </button>
 
-                <button type="button" class="nav__btn btn--close">
-                    <i class="bx bx-x"></i>
-                </button>
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link">Inicio </a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Productos</a>
+            </li>
+          </ul>
+        </div>
 
-                <ul class="nav__list">
-                    <li class="nav__items">
-                        <a href="#" class="nav__link">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__link">Productos</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="nav__buttons">
+          <button type="button" class="nav__btn btn--cart">
+            <i class="bx bx-shopping-bag"></i>
+            <span class="notify">0</span>
+          </button>
 
-            <div class="nav__buttons">
-                <button type="button" class="nav__btn btn--cart">
-                    <i class='bx bx-shopping-bag'></i>
-                    <span class="notify">0</span>
-                </button>
-
-                <button type="button" class="nav__btn btn--menu">
-                    <i class='bx bx-menu'></i>
-                </button>
-
-            </div>
-        </nav>
+          <button type="button" class="nav__btn btn--menu">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <!-- main -->
     <main class="main">
-
-        <section class="products section">
-            <h2 class="products__title section--title">Productos</h2>
-            <div class="products__container container">
-
-                <!-- <article class="produc">
+      <section class="products section">
+        <h2 class="products__title section--title">Productos</h2>
+        <div class="products__container container">
+          <!-- <article class="produc">
                     <div class="product__image">
                         <img src="/producto-1.png" alt="producto 1">
                     </div>
@@ -156,33 +151,29 @@
                         <h3 class="product__title">Zapato Clasico</h3>
                     </div> 
                 </article>-->
-
-            </div>
-        </section>
-
+        </div>
+      </section>
     </main>
 
     <!-- Cart -->
     <div class="cart">
-        <div class="cart__container">
+      <div class="cart__container">
+        <div class="cart__header">
+          <h3 class="cart__title">Carrito de Compras</h3>
 
-            <div class="cart__header">
-                <h3 class="cart__title">Carrito de Compras</h3>
+          <button type="button" class="cart__btn btn--close">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
 
-                <button type="button" class="cart__btn btn--close">
-                    <i class="bx bx-x"></i>
-                </button>
-
-            </div>
-
-            <div class="cart__body">
-                <!-- <div class="cart__empty">
+        <div class="cart__body">
+          <!-- <div class="cart__empty">
                     <i class="bx bx-cart"></i>
                     <p class="cart__empty--text">No hay productos en el carrito</p>
                 </div> -->
 
-                <!-- Article -->
-                <!-- <article class="article">
+          <!-- Article -->
+          <!-- <article class="article">
 
                     <div class="article__image">
                         <img src="/producto-1.png" alt="producto 2">
@@ -214,64 +205,60 @@
                     </div>
 
                 </article> -->
-
-
-
-            </div>
-
-            <div class="cart__footer">
-
-                <div class="cart__count">
-                    <span class="cart__count--text">Articulos</span>
-                    <span class="cart__count--item">0</span>
-                </div>
-
-                <div class="cart__total">
-                    <span class="cart__total--text">Total</span>
-                    <span class="cart__total--item">$0</span>
-                </div>
-
-                <button type="button" class="cart__btn btn--buy">Comprar</button>
-            </div>
         </div>
+
+        <div class="cart__footer">
+          <div class="cart__count">
+            <span class="cart__count--text">Articulos</span>
+            <span class="cart__count--item">0</span>
+          </div>
+
+          <div class="cart__total">
+            <span class="cart__total--text">Total</span>
+            <span class="cart__total--item">$0</span>
+          </div>
+
+          <button type="button" class="cart__btn btn--buy">Comprar</button>
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
     <footer class="footer section">
-        <div class="footer__container container">
-            <div class="footer__top">
-                <div class="footer__left">
-                    <h3 class="footer__title">Sobre Nosotros</h3>
-                    <p class="footer__text">Una descripcion breve del equipo, así como sus nombres completos, si
-                        trabajas solo tambien escribe una descripcion de ti</p>
-                </div>
-                <div class="footer__right">
-                    <h3 class="footer__title">Redes Sociales</h3>
-                    <ul class="footer__social">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                <i class='bx bxl-instagram'></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                <i class='bx bxl-linkedin'></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p class="footer__text">Todos los derechos reservados</p>
-            </div>
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <h3 class="footer__title">Sobre Nosotros</h3>
+            <p class="footer__text">
+              Una descripcion breve del equipo, así como sus nombres completos,
+              si trabajas solo tambien escribe una descripcion de ti
+            </p>
+          </div>
+          <div class="footer__right">
+            <h3 class="footer__title">Redes Sociales</h3>
+            <ul class="footer__social">
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer__bottom">
+          <p class="footer__text">Todos los derechos reservados</p>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
